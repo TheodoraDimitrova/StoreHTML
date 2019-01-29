@@ -76,41 +76,43 @@ p:last-of-type {
 }
 
 .product-detail {
-  width: 800px;
+  width: 95%;
 }
 .product-detail img {
-  max-width: 50%;
-  float: left;
+  /* max-width: 50%; */
+  width: 80%;
+  /* float: left; */
   margin: 10px;
 }
 
 /* Contact us */
 form {
-  width: 60%;
+  width: 100%;
   margin: 10px 0;
   padding: 10px;
+  text-align: center;
 }
 .inline label {
   display: inline-block;
-  width: 100px;
+  width: 20%;
 }
 input[type="text"],
 input[type="email"],
 textarea {
   padding: 10px;
-  width: 400px;
+  width: 80%;
   margin: 10px;
 }
 
 table {
-  width: 400px;
+  width: 20%;
   text-align: left;
   margin: 20px 0;
 }
 
 th,
 td {
-  padding: 10px;
+  padding: 5px;
 }
 tr:hover {
   background: white;
@@ -124,6 +126,37 @@ tr:hover {
   .product {
     display: inline-block;
     width: 40%;
+  }
+  .product-detail {
+    width: 100%;
+    margin: 10px;
+  }
+  .product-detail img {
+    max-width: 100%;
+  }
+  form {
+    width: 60%;
+    margin: 10px 0;
+    padding: 10px;  
+  }
+  .inline label {
+    display: inline-block;
+    width: 20%;
+    margin-left: 20px
+  }
+  input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  width: 60%;
+  margin: 10px;
+}
+  th,
+  td {
+    padding: 10px;
+  }
+  form{
+    text-align: left;
   }
 }
 @media (min-width: 1000px) {
@@ -144,6 +177,9 @@ tr:hover {
     vertical-align: top;
     padding: 10px;
   }
+  form{
+    text-align: left;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -155,5 +191,21 @@ tr:hover {
   }
   input[type="search"] {
     width: 20%;
+  }
+  .product-detail {
+    width: 100%;
+    margin: 10px;
+  }
+  .product-detail img {
+    max-width: 50%;
+    float: left;
+  }
+  table {
+    width: 60%;
+    text-align: left;
+    margin: 20px 0;
+  }
+  form{
+    text-align: left;
   }
 }
