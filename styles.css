@@ -1,0 +1,127 @@
+html {
+  background: gainsboro;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: rgba(175, 33, 214, 0.788);
+  max-width: 90%;
+  margin: 0 auto;
+}
+header,
+footer {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 20px 10px;
+}
+
+.product {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 260px;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  line-height: 30px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: blue;
+}
+
+header li {
+  display: inline;
+}
+header h1,
+nav {
+  display: inline-block;
+}
+header h1 {
+  width: 70%;
+}
+
+main {
+  width: 860px;
+  display: inline-block;
+  padding: 10px;
+}
+aside {
+  width: 270px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+}
+aside li:hover {
+  color: white;
+}
+
+.button {
+  padding: 10px;
+  display: inline-block;
+}
+p:first-of-type {
+  color: red;
+}
+p:last-of-type {
+  color: yellow;
+}
+.button:last-of-type {
+  color: white;
+  background: blue;
+}
+/* product-details page */
+
+.product-detail {
+  width: 800px;
+}
+.product-detail img {
+  max-width: 50%;
+  float: left;
+  margin: 10px;
+}
+
+/* Contact us */
+form {
+  width: 600px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.inline label {
+  display: inline-block;
+  width: 100px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  width: 400px;
+  margin: 10px;
+}
+
+table {
+  width: 400px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 10px;
+}
+tr:hover {
+  background: white;
+}
