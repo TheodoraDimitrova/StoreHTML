@@ -5,8 +5,8 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   background: rgba(175, 33, 214, 0.788);
-  max-width: 90%;
   margin: 0 auto;
+  text-align: center;
 }
 header,
 footer {
@@ -14,15 +14,17 @@ footer {
   color: rgb(255, 255, 255);
   padding: 20px 10px;
 }
+input[type="search"] {
+  width: 100%;
+}
 
 .product {
   box-sizing: border-box;
   border: 1px solid black;
-  width: 260px;
-  margin: 10px;
-  padding: 10px;
-  display: inline-block;
+  margin: 5px;
+  padding: 5px;
   text-align: center;
+  width: 100%;
 }
 img {
   max-width: 100%;
@@ -51,20 +53,9 @@ nav {
   display: inline-block;
 }
 header h1 {
-  width: 70%;
+  width: 100%;
 }
 
-main {
-  width: 860px;
-  display: inline-block;
-  padding: 10px;
-}
-aside {
-  width: 270px;
-  display: inline-block;
-  vertical-align: top;
-  padding: 10px;
-}
 aside li:hover {
   color: white;
 }
@@ -84,7 +75,6 @@ p:last-of-type {
   background: blue;
 }
 
-
 .product-detail {
   width: 800px;
 }
@@ -96,7 +86,7 @@ p:last-of-type {
 
 /* Contact us */
 form {
-  width: 600px;
+  width: 60%;
   margin: 10px 0;
   padding: 10px;
 }
@@ -124,4 +114,46 @@ td {
 }
 tr:hover {
   background: white;
+}
+
+@media (min-width: 800px) {
+  input[type="search"] {
+    width: 40%;
+    margin-left: 2em;
+  }
+  .product {
+    display: inline-block;
+    width: 40%;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    text-align: left;
+  }
+  header h1 {
+    width: 60%;
+  }
+  main {
+    width: 70%;
+    display: inline-block;
+    padding: 10px;
+  }
+  aside {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 90vw;
+  }
+  .product {
+    width: 30%;
+  }
+  input[type="search"] {
+    width: 20%;
+  }
 }
