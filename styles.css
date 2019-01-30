@@ -21,10 +21,10 @@ input[type="search"] {
 .product {
   box-sizing: border-box;
   border: 1px solid black;
-  margin: 5px;
   padding: 5px;
   text-align: center;
-  width: 100%;
+  width: 90%;
+ margin: 0 auto;
 }
 img {
   max-width: 100%;
@@ -46,7 +46,7 @@ a:hover {
 }
 
 header li {
-  display: inline;
+  display: block;
 }
 header h1,
 nav {
@@ -77,12 +77,11 @@ p:last-of-type {
 
 .product-detail {
   width: 95%;
+  margin: 0 auto;
 }
 .product-detail img {
-  /* max-width: 50%; */
   width: 80%;
-  /* float: left; */
-  margin: 10px;
+  
 }
 
 /* Contact us */
@@ -119,17 +118,26 @@ tr:hover {
 }
 
 @media (min-width: 800px) {
+ nav{
+  display: flex;
+  justify-content: center;
+ }
+ nav a{
+  display: flex;
+  justify-content: space-around;
+ }
   input[type="search"] {
     width: 40%;
     margin-left: 2em;
   }
+ 
   .product {
     display: inline-block;
     width: 40%;
   }
   .product-detail {
-    width: 100%;
-    margin: 10px;
+    width: 90%;
+    margin: 0 auto;
   }
   .product-detail img {
     max-width: 100%;
@@ -163,8 +171,21 @@ textarea {
   body {
     text-align: left;
   }
+  header h1, nav {
+    display: inline-block;
+  }
+  nav li {
+    display: inline-block;
+  }
+  input[type="search"] {
+    width: 20%;
+  }
   header h1 {
     width: 60%;
+  }
+  .product-detail img {
+    max-width: 50%;
+    float: left;
   }
   main {
     width: 70%;
@@ -186,8 +207,12 @@ textarea {
   body {
     max-width: 90vw;
   }
+  nav li{
+    display: inline-block;
+  }
   .product {
     width: 30%;
+    margin: 10px;
   }
   input[type="search"] {
     width: 20%;
